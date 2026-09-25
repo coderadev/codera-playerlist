@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Player List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="panel" class="hidden">
+    <div class="header">
+      <h1 id="txtTitle">PLAYER LIST</h1>
+      <span class="subtitle" id="txtSubtitle">ONLINE</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span class="stat-label" id="txtTotal">PLAYER LIST</span>
+        <div class="stat-body">
+          <span class="stat-value" id="totalOnline">0</span>
+          <span class="stat-underline"></span>
+        </div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label" id="txtArea">PLAYERS IN AREA</span>
+        <div class="stat-body">
+          <span class="stat-value" id="areaCount">0</span>
+          <span class="stat-underline"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <span class="key" id="keyOnline">Q</span>
+      <div class="tab active" id="tabOnline" data-tab="online">
+        <span class="tab-label" id="txtTabOnline">ONLINE</span>
+      </div>
+      <div class="tab" id="tabDisconnected" data-tab="disconnected">
+        <span class="tab-label" id="txtTabDisc">DISCONNECTED</span>
+      </div>
+      <span class="key" id="keyDisc">E</span>
+    </div>
+
+    <div class="list" id="playerList"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
